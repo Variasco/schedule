@@ -1,0 +1,101 @@
+.container {
+    max-width: 1200px;
+}
+
+.h2 {
+    text-transform: capitalize;
+}
+
+.month {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+}
+
+.body {
+    display: flex;
+    padding: 16px 0;
+}
+
+.empty {
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.dates {
+    display: flex;
+    flex-grow: 1;
+
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.col {
+    border-left: 1px solid #000;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col.active {
+    font-weight: bold;
+}
+
+.col:last-child {
+    border-right: 1px solid #000;
+}
+
+.colDate {
+    font-size: 24px;
+    font-weight: bald;
+}
+
+.colWeekday {
+}
+
+.time {
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.timeCell {
+    height: 35px;
+    text-align: right;
+    margin-right: 6px;
+    position: relative;
+}
+
+.timeCell:last-child {
+    height: 0;
+}
+
+.timeText {
+    position: absolute;
+    top: -11px;
+    right: 0;
+}
+
+.cells {
+    display: flex;
+    flex-grow: 1;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    border-top: 1px solid;
+}
+
+.cell:last-child {
+    border-bottom: 1px solid;
+}
